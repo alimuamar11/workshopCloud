@@ -8,13 +8,16 @@
 2. File Dockerfile
 
 `FROM golang:1.11.4`
+
 Tidak membuild image dari awal, maka digunakan `from` untuk mengambil images yang sudah ada.
 golang adalah nama images yang telah tersedia, dengan tag nya adalah berupa versi dari images golang. yang bisa dilihat di website docker.
 
 `COPY main.go /app/main.go`
+
 kemudian mengcopy semua file `main.go` ke dalam images yang akan disimpan ke folder `app` dengan nama `main.go`
 
 `CMD ["go","run","/app/main.go"]`
+
 digunakan untuk me-runing file. diambil dari perintah running go yaitu `#go run main.go` tetapi ditambah perintah `CMD = command`
 
 3. docker build --tag app-golang:1.0 .

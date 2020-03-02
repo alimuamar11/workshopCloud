@@ -32,3 +32,5 @@ aplikasi biasanya defauld di 8080 kemudian di expose ke luar dengan port 8080 at
 6. docker container ls -all
 
 7. docker container start app1
+
+Matursuwun

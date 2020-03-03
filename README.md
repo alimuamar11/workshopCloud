@@ -91,4 +91,10 @@ Membuat container dengan nama app1 kemudian membuka port `-p` aplikasi biasanya 
 
 `#docker container logs namacontainer`
 
+#Masuk container
+
+`#docker exec -t -i redis1 /bin/bash` misal masuk container redis (bisa lihat dockerdoc coy)
+`#type redis-cli` memastikan
+`#redis-cli` masuk cli punya redis, kalo mau keluar ya `#exit`
+
 > Matursuwun

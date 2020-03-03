@@ -1,3 +1,4 @@
+![eksis](https://github.com/alimuamar11/workshopCloud/blob/master/Docker%20Commands/raung.png)
 # Cubectl
 
 ```docker pull nginx```
@@ -90,4 +91,4 @@ Membuat container dengan nama app1 kemudian membuka port `-p` aplikasi biasanya 
 
 `#docker container logs namacontainer`
 
-Matursuwun
+> Matursuwun

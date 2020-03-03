@@ -13,6 +13,7 @@
 `#docker images` 
 
 2. Membuat container dari image mongo yg udah di pull td
+
 `#docker container create mongo:4.1` Disini nama container random, nanti susah ngafalin.
 
 `#docker container create --name mongoserver1 mongo:4.1` (mongoserver1 bersifat unik maka tidak boleh sama jika mau buat 2 container dengan image sama.)
@@ -38,7 +39,7 @@ port ini adalah milik internal container (mongo) misal akan dibuat 2 container d
 
 `#docker container rm mongoserver1 mongoserver2` dihapus dulu containernya
 
-`#docker image rm mongo:4.1
+`#docker image rm mongo:4.1`
 
 # Membuat image dengan Dockerfile
 1. Buat dulu aplikasinya dengan nama main.go 
@@ -58,6 +59,7 @@ kemudian mengcopy semua file `main.go` yang ada di local ke dalam image yang aka
 digunakan untuk me-runing file. diambil dari perintah running go yaitu `#go run main.go` tetapi ditambah perintah `CMD = command`
 
 3. Build image dengan dr Dockerfile
+
 `#docker build --tag app-golang:1.0 .` Membuild image menggunakan perintah `--tag` dengan nama image `app-golang` dan tag=`1.0`
 
 4. Membuat container pada image yang barusan di build

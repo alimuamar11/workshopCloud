@@ -85,13 +85,12 @@ Membuat container dengan nama app1 kemudian membuka port `-p` aplikasi biasanya 
 
 3. Liat di repo udah ada belom.
 
-# Masuk container docker
+# Melihat container docker
 
 `#docker container inspect namacontainer`
-
 `#docker container logs namacontainer`
 
-#Masuk container
+# Masuk container
 
 `#docker exec -t -i redis1 /bin/bash` misal masuk container redis (bisa lihat dockerdoc coy)
 `#type redis-cli` memastikan

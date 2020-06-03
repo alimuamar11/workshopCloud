@@ -49,7 +49,8 @@ port ini adalah milik internal container (mongo) misal akan dibuat 2 container d
 `FROM golang:1.11.4`
 
 Tidak membuild image dari awal, maka digunakan `from` untuk mengambil images yang sudah ada.
-golang adalah nama images yang telah tersedia, dengan tag nya adalah berupa versi dari images golang. yang bisa dilihat di website docker.
+golang adalah nama images yang telah tersedia, 
+dengan tag nya adalah berupa versi dari images golang. yang bisa dilihat di website docker.
 
 `COPY main.go /app/main.go`
 
@@ -67,7 +68,8 @@ digunakan untuk me-runing file. diambil dari perintah running go yaitu `#go run 
 
 `#docker container create --name app1 -p 8080:8080 app-golang:1.0`
 
-Membuat container dengan nama app1 kemudian membuka port `-p` aplikasi biasanya default di 8080 kemudian di expose ke luar dengan port 8080 atau bisa 80 dalam image `app-golang:1.0` 
+Membuat container dengan nama app1 kemudian membuka port `-p` aplikasi biasanya default di 8080 
+kemudian di expose ke luar dengan port 8080 atau bisa 80 dalam image `app-golang:1.0` 
 
 `#docker container ls --all` dilihat containernya
 
